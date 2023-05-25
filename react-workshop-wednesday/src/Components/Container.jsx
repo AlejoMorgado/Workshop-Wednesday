@@ -28,6 +28,12 @@ const Container = () => {
   return (
     <div className='wrapper'>
       <ContentContainer
+        gender={character.gender}
+        birthYear={character.birth_year}
+        eyeColor={character.eye_color}
+        hairColor={character.hair_color}
+        mass={character.mass}
+        skinColor={character.skin_color}
         name={character.name}
         height={character.height}
         onButtonClick={nextCharacter}
