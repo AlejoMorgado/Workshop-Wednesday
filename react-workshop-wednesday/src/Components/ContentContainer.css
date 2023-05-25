@@ -1,0 +1,46 @@
+.cardContainer {
+  height: 60vh;
+  width: 50vw;
+  background-color: white;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: row;
+}
+.leftCardContainer{
+align-items: start;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.rightCardContainer{
+  width: 40%;
+  background-image: url("../images/image.png");
+}
+
+.upperSide {
+  padding: 15px;
+  height: 50%;
+  width: 50%;
+}
+
+.bottomSide{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  height: 5vh;
+  width: 2.5vw;
+  color: #D1D1D1;
+}
+.allianceButton{
+  border-radius: 50%;
+  color: #D1D1D1;
+}
+#name{
+  color: #D1D1D1;
+}
