@@ -10,7 +10,6 @@ const Container = () => {
   const fetchCharacterData = async () => {
     try {
       const data = await fetchData(characterId);
-      console.log(data);
       setCharacter(data);
     } catch (error) {
       console.log(error);

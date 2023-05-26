@@ -1,0 +1,7 @@
+.fullContainer{
+  display: flex;
+}
+.formGroup{
+  display: flex;
+  flex-direction: column;
+}

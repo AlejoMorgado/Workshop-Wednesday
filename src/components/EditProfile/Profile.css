@@ -1,0 +1,21 @@
+.profileWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color:#5C6066;
+}
+input {
+  color: #5C6066;
+  height: 3vh;
+  margin: 5px;
+  margin-left: 0px;
+  border-radius: 0.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #82B2FD;
+  outline: none; 
+  padding: 5px; 
+}
+label {
+  color: #8B8E92;
+}

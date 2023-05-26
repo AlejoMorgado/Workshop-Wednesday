@@ -1,0 +1,9 @@
+.informationContainer{
+  display: flex;
+  flex-direction: column;
+}
+.formGroup{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,9 @@
+.locationContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formGroup{
+  display: flex;
+  flex-direction: column;
+}
