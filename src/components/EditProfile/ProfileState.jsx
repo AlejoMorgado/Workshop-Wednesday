@@ -6,16 +6,25 @@ const ProfileState = () => {
 
   const cityHandler = (event) => {
     const getCity = event.target.value;
-    if (/^[A-Za-z]*$/.test(getCity)) {
+    if (isAlphabetic(getCity)) {
       setCity(getCity);
+    } else {
+      setCity('');
     }
   };
 
   const stateHandler = (event) => {
     const getState = event.target.value;
-    if (/^[A-Za-z]*$/.test(getState)) {
+    if (isAlphabetic(getState)) {
       setState(getState);
+    } else {
+      setState('');
     }
+  };
+
+  const isAlphabetic = (value) => {
+    const letters = /^[A-Za-z]+$/;
+    return value.match(letters) !== null;
   };
 
   return (

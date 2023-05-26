@@ -14,10 +14,18 @@ const ProfileLocation = () => {
 
   const countryHandler = (event) => {
     const getCountry = event.target.value;
-    if (/^[A-Za-z]*$/.test(getCountry)) {
+    if (isAlphabetic(getCountry)) {
       setCountry(getCountry);
+    } else {
+      setCountry('');
     }
   };
+
+  const isAlphabetic = (value) => {
+    const letters = /^[A-Za-z]+$/;
+    return value.match(letters) !== null;
+  };
+
   return (
     <div className='locationContainer' >
       <div className="formGroup">

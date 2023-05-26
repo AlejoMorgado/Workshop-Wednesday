@@ -4,6 +4,17 @@
   justify-content: space-between;
   color: #5c6066;
 }
+.message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #82b2fd;
+  padding: 20px;
+  border: 1px solid #5c6066;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box shadow here */
+}
+
 input {
   color: #5c6066;
   height: 3vh;
