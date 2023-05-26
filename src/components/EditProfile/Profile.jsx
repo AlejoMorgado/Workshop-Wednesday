@@ -7,6 +7,19 @@ import './Profile.css';
 import image from '../../images/profile.jpg';
 
 const Profile = () => {
+  const [password, setPassword] = useState('');
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSave = () => {
+    if (password.length < 6) {
+      alert('Password should have at least 6 characters');
+    } else {
+      window.location.reload(); 
+    }
+  };
 
   return (
     <div className="profileWrapper">
@@ -23,8 +36,8 @@ const Profile = () => {
         <ProfileLocation />
       </div>
       <label>Password</label>
-      <input type="password" />
-      <button>Save</button>
+      <input type="password" value={password} onChange={handlePasswordChange} />
+      <button onClick={handleSave}>Save</button>
     </div>
   );
 };
